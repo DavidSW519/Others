@@ -1,0 +1,7 @@
+from fuzzywuzzy import fuzz
+
+string1 = "AVEO Version 3234231"
+string2 = "aveo"
+
+ratio = fuzz.ratio(string1.lower(), string2.lower())
+print(ratio)
